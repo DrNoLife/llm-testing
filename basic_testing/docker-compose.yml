@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  bart-service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./app:/app
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
